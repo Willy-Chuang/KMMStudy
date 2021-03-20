@@ -14,7 +14,7 @@ class SpotifyApi {
 
         // 請記得到 “https://developer.spotify.com/console/get-artist-albums” 取得新的 "Oauth Token"
         private const val TOKEN =
-            "BQCgD_msnDnxIN56exd3KhFDX1t_AV3b7hT4hj4E1KPoW0znlFXeB0vLotz0ESw0ELE2h8zFyr4IOb-lW7UtW-T0Y-7cdQjinteRQBCFtDEfJ9uViIYl5ekeVk7-pnAmiGphZ9qWGM4O50csTwGfBqttSICUZrGt0Ts"
+            "BQCNMNsuDKDybvSK_JCos_evYFxAu5HR53G5xgK0uhLN_UU4hu0zQokXe3O-WjWSiJVHQMbxtTezrwHXGK4NujENFFSzQ3gN33y3c0262E7VGS49FNF-tQBo6NMRnRi8Iy5di4uHevLXI_P-TrOLXSpYx1lwhKK9B38"
     }
 
     private val httpClient = HttpClient {
