@@ -67,6 +67,11 @@ android {
         minSdkVersion(24)
         targetSdkVersion(29)
     }
+    configurations {
+        create("testApi")
+        create("testDebugApi")
+        create("testReleaseApi")
+    }
 }
 
 val packForXcode by tasks.creating(Sync::class) {

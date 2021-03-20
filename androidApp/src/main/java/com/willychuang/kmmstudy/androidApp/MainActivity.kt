@@ -1,5 +1,6 @@
 package com.willychuang.kmmstudy.androidApp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         tv.text = greet()
 
         findViewById<Button>(R.id.btn_main_go_xml_layout).setOnClickListener(onButtonListener)
+        findViewById<Button>(R.id.btn_main_go_compose_layout).setOnClickListener(onButtonClick)
     }
 
     private val onButtonListener = View.OnClickListener {
@@ -41,5 +43,10 @@ class MainActivity : AppCompatActivity() {
                 GdgLogger.e("Error","$it")
             }
         }
+    }
+
+    private val onButtonClick = View.OnClickListener {
+        intent = Intent(this, AlbumsComposeActivity::class.java)
+        startActivity(intent)
     }
 }
